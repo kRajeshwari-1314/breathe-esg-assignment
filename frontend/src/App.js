@@ -19,10 +19,9 @@ function App() {
     try {
 
       const response = await axios.post(
-        'http://127.0.0.1:8000/api/upload/',
-        formData
-      );
-
+  'https://breathe-esg-assignment-5r93.onrender.com/api/upload/',
+  formData
+);
       setMessage(
         `${response.data.message} - ${response.data.records_created} records created`
       );
