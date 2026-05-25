@@ -1,0 +1,4 @@
+Employee,TravelType,FromCode,ToCode,Class,DistanceKm
+Rahul,Flight,BLR,DEL,Economy,1740
+Amit,Hotel,,,Business,3
+Sneha,Taxi,BLR Airport,Office,,35

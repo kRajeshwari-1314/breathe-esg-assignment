@@ -1,0 +1,4 @@
+MeterID,BillingStart,BillingEnd,kWh,Tariff
+MTR001,2026-01-01,2026-01-31,4500,Commercial
+MTR002,2026-01-15,2026-02-14,7200,Industrial
+MTR003,2026-02-01,2026-02-28,5100,Residential

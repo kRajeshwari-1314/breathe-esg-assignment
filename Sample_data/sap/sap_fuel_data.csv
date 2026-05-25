@@ -1,0 +1,4 @@
+PlantCode,FuelType,Quantity,Unit,Date
+BLR01,Diesel,500,Liters,2026-01-10
+DEL02,Petrol,120,Gallons,2026-01-12
+MUM03,Natural Gas,300,Cubic Meters,2026-01-15
