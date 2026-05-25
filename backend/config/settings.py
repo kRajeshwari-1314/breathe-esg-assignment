@@ -13,9 +13,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING
 SECRET_KEY = 'django-insecure-change-this-later'
 
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "breathe-esg-assignment-5r93.onrender.com",
+    "127.0.0.1",
+    "localhost",
+]
 
 
 # Installed apps
