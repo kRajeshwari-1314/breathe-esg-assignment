@@ -284,13 +284,14 @@ Backend can be deployed using:
 ## Frontend
 
 ```text
-Add your deployed frontend URL here
+https://breathe-esg-assignment-1-n8ac.onrender.com
 ```
 
 ## Backend API
 
 ```text
-Add your deployed backend URL here
+https://breathe-esg-assignment-5r93.onrender.com/api/upload/
+
 ```
 
 ---
