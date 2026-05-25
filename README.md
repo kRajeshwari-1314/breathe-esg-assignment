@@ -1,6 +1,6 @@
 # 🌱 Breathe ESG Assignment
 
-A full-stack ESG data ingestion platform built using Django REST Framework and React.
+A full-stack ESG data ingestion platform built using **Django REST Framework** and **React**.
 
 ---
 
@@ -10,11 +10,11 @@ This project simulates a simplified ESG (Environmental, Social, and Governance) 
 
 The platform accepts CSV uploads from different systems, normalizes the data, detects suspicious records, and stores everything in a centralized database.
 
-The application supports:
+Supported data sources include:
 
-- SAP fuel data
-- Utility electricity consumption data
-- Business travel data
+* SAP fuel data
+* Utility electricity consumption data
+* Business travel data
 
 ---
 
@@ -22,21 +22,21 @@ The application supports:
 
 ## 🔧 Backend
 
-- Django REST Framework API
-- CSV upload endpoint
-- Dynamic schema detection
-- Multi-source ingestion pipeline
-- Data normalization
-- Suspicious value detection
-- SQLite database integration
-- Django admin dashboard
+* Django REST Framework API
+* CSV upload endpoint
+* Dynamic schema detection
+* Multi-source ingestion pipeline
+* Data normalization
+* Suspicious value detection
+* SQLite database integration
+* Django admin dashboard
 
 ## 🎨 Frontend
 
-- React upload interface
-- File selection and upload
-- API integration using Axios
-- Upload success feedback
+* React upload interface
+* File selection and upload
+* Axios-based API integration
+* Upload success feedback
 
 ---
 
@@ -52,8 +52,8 @@ FuelType, Quantity, Unit, Date
 
 Processed as:
 
-- Scope 1 emissions
-- Fuel consumption activities
+* Scope 1 emissions
+* Fuel consumption activities
 
 ---
 
@@ -67,8 +67,8 @@ MeterID, BillingStart, BillingEnd, kWh, Tariff
 
 Processed as:
 
-- Scope 2 emissions
-- Electricity usage activities
+* Scope 2 emissions
+* Electricity usage activities
 
 ---
 
@@ -82,8 +82,8 @@ Employee, TravelType, FromCode, ToCode, Class, DistanceKm
 
 Processed as:
 
-- Scope 3 emissions
-- Business travel activities
+* Scope 3 emissions
+* Business travel activities
 
 ---
 
@@ -91,16 +91,16 @@ Processed as:
 
 ## Backend
 
-- Python
-- Django
-- Django REST Framework
-- Pandas
-- SQLite
+* Python
+* Django
+* Django REST Framework
+* Pandas
+* SQLite
 
 ## Frontend
 
-- React
-- Axios
+* React
+* Axios
 
 ---
 
@@ -113,15 +113,14 @@ breathe-esg-assignment/
 │   ├── config/
 │   ├── emissions/
 │   ├── manage.py
-│   └── venv/
+│   ├── requirements.txt
 │
 ├── frontend/
 │   ├── src/
 │   ├── public/
 │   ├── package.json
-│   └── README.md
 │
-├── sample_data/
+├── Sample_data/
 │   ├── sap/
 │   ├── utility/
 │   └── travel/
@@ -139,21 +138,51 @@ breathe-esg-assignment/
 
 # ⚙️ Backend Setup
 
+## 1. Navigate to Backend
+
 ```bash
 cd backend
+```
 
+## 2. Create Virtual Environment
+
+```bash
 python -m venv venv
+```
 
+## 3. Activate Virtual Environment
+
+### Windows
+
+```bash
 venv\Scripts\activate
+```
 
-pip install django djangorestframework pandas django-cors-headers
+### Mac/Linux
 
+```bash
+source venv/bin/activate
+```
+
+## 4. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+## 5. Run Database Migrations
+
+```bash
 python manage.py migrate
+```
 
+## 6. Start Backend Server
+
+```bash
 python manage.py runserver
 ```
 
-Backend URL:
+Backend runs at:
 
 ```text
 http://127.0.0.1:8000/
@@ -163,17 +192,25 @@ http://127.0.0.1:8000/
 
 # 💻 Frontend Setup
 
+## 1. Navigate to Frontend
+
 ```bash
 cd frontend
+```
 
+## 2. Install Dependencies
+
+```bash
 npm install
+```
 
-npm install axios
+## 3. Start Frontend
 
+```bash
 npm start
 ```
 
-Frontend URL:
+Frontend runs at:
 
 ```text
 http://localhost:3000/
@@ -215,7 +252,7 @@ Database Storage
 
 # 🗄️ Admin Panel
 
-Django admin can be accessed at:
+Django admin is available at:
 
 ```text
 http://127.0.0.1:8000/admin/
@@ -223,18 +260,71 @@ http://127.0.0.1:8000/admin/
 
 ---
 
+# 🚀 Deployment
+
+## Frontend Deployment
+
+Frontend can be deployed using:
+
+* Vercel
+* Netlify
+
+## Backend Deployment
+
+Backend can be deployed using:
+
+* Render
+* Railway
+* PythonAnywhere
+
+---
+
+# 🌐 Deployment URLs
+
+## Frontend
+
+```text
+Add your deployed frontend URL here
+```
+
+## Backend API
+
+```text
+Add your deployed backend URL here
+```
+
+---
+
+# 📄 Requirements File
+
+Create a `requirements.txt` file inside the `backend/` folder with:
+
+```text
+django
+djangorestframework
+pandas
+django-cors-headers
+```
+
+Generate automatically using:
+
+```bash
+pip freeze > requirements.txt
+```
+
+---
+
 # 🚀 Future Improvements
 
-- PostgreSQL integration
-- Authentication and authorization
-- Advanced ESG calculations
-- Dashboard analytics
-- Cloud deployment
-- Better UI/UX
+* PostgreSQL integration
+* Authentication and authorization
+* Advanced ESG calculations
+* Dashboard analytics
+* Cloud deployment
+* Improved UI/UX
 
 ---
 
 # 👨‍💻 Author
 
-Rajeshwari
-
+Kuruva Rajeshwari
